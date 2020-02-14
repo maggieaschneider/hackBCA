@@ -32,7 +32,12 @@ class Main(Frame):
 
     def create_widgets(self):
         Label(self, text = "WELCOME TO L-CARM!")
-
+        Button(self, text = "Basic Calculations", font = "Helvetica 10", command = self.Basic_calc
+               ).grid(row = 2, column = 0)
+        Button(self, text = "Calendar", font= "Helvetica 10", command = self.calendar
+               ).grid(row=3, column = 2)
+        Button(self, text = "Calendar", font= "Helvetica 10", command = self.calendar
+               ).grid(row=3, column = 2)                                               
 root = Tk()
 root.title("Main screen")
 root.geometry("1000x1400")

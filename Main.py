@@ -1,4 +1,4 @@
-from tkinter import *
+0from tkinter import *
 # from academy import academy
 # from aesthetic import aesthetic
 # from Basic_calc import Basic_calc

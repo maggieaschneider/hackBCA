@@ -31,8 +31,30 @@ class Main(Frame):
         self.create_widgets()
 
     def create_widgets(self):
-        Label(self, text = "WELCOME TO L-CARM!")
+        Label(self, text = "WELCOME TO L-CARM!", font= "Helvetica 30"
+                                                        ).grid(row = 0, columnspan = 8)
+        Label(self, text = "Basic Applications", font = "Helvetica 20"
+              ).grid(row = 1, columnspan = 1)
+        Label(self, text = "Quizzes", font = "Helvetica 20"
+              ).grid(row = 5, columnspan = 1)
+        Label(self, text = "").grid(row = 4, columnspan = 3)
 
+        Button(self, text = "Academy", font = "Helvetica 10", command = self.academy
+               ).grid(row = 6, column = 0)
+        Button(self, text = "Aesthetic", font = "Helvetica 10", command = self.aesthetic
+               ).grid(row = 6, column = 2, sticky = W)
+        Button(self, text = "Color person", font = "Helvetica 10", command = self.color_person
+               ).grid(row = 6, column = 4)
+        Button(self, text = "Disney Princesses", font = "Helvetica 10", command = self.disney_princess
+               ).grid(row = 6, column = 6)
+        Button(self, text = "Hogwarts House", font = "Helvetica 10", command = self.hogwarts_house
+               ).grid(row = 6, column = 8)
+        Button(self, text = "Spirit Animal", font = "Helvetica 10", command = self.spirit_animal
+               ).grid(row = 6, column = 10)
+        Button(self, text = "Third Grade Quiz", font = "Helvetica 10", command = self.third_grade_quiz
+               ).grid(row = 6, column = 12)
+        Button(self, text = "Zodiac Sign", font = "Helvetica 10", command = self.zodiac_sign
+               ).grid(row = 6, column = 14)
 root = Tk()
 root.title("Main screen")
 root.geometry("1000x1400")
